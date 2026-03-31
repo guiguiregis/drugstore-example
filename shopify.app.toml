@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ee8c84a4f5d9d795f309b045e179c0ba"
+name = "pd-requisition"
+application_url = "https://supposed-rover-fuji-pub.trycloudflare.com/"
+embedded = true
+handle = "pd-requisition"
+
+[webhooks]
+api_version = "2023-01"
+
+[auth]
+redirect_urls = [
+  "https://supposed-rover-fuji-pub.trycloudflare.com/auth/callback",
+  "https://supposed-rover-fuji-pub.trycloudflare.com/auth/shopify/callback",
+  "https://supposed-rover-fuji-pub.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
